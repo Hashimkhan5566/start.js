@@ -225,12 +225,12 @@
 // // }
 
 //sum of first 20 natural number
-let sum = 0;
+let sum1 = 0;
 for(let i=0; i<=20; i++){
-    sum+=i;
+    sum1+=i;
 
 }
-console.log("the i is 20 natural number: ", sum);
+console.log("the i is 20 natural number: ", sum1);
 
 //while loop
 
@@ -250,6 +250,40 @@ console.log("the i is 20 natural number: ", sum);
 //     i++;
 // }
 
+// Keep adding numbers starting from 1 until the sum becomes greater than 200, then stop.
+
+let sum = 0;
+
+let i=1;
+
+while(sum<=100){
+    sum+=i;
+    i++;
+}
+console.log("the sum of final", sum);
+console.log("the sum of 20",i-1 );
+
+//reverse the number
+
+let num = 12345;
+let reverse = 0
+
+while(num>0){
+ let digit = num%10;
+ reverse =  reverse*10+digit;
+ num= Math.floor(num/10);
+}
+console.log("the reverse number is :", reverse);
 
 
+//factorial example 
+
+let number = 11;
+let factorial = 1;
+
+while(number>0){
+  factorial*=number;
+  number--;
+}
+console.log("the factorial number is:", factorial);
 
