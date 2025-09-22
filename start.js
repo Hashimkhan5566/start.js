@@ -62,3 +62,24 @@ console.log(n);
 
 //Keep adding numbers starting from 1 until the sum becomes greater than 200, then stop.
 
+let sum_n = 0;
+let num2 = 1;
+while(sum_n<=200){
+  sum_n+=num2;
+  num2++;
+}
+console.log("the sum of number is:", sum_n);
+console.log("the number is ",num2-1);
+
+//print the reverse number of this number 12345
+// using while loop
+let num = 12345;
+let reverse = 0;
+while(num>0){
+  let digit = num%10; // remain the last  number
+  reverse = reverse*10+digit;// reverse
+  num= Math.floor(num/10);//remove the last digit and sure it stay no decimal number.
+
+}
+console.log("the number is:", num);// print the number
+console.log("the reverse number is:", reverse);// print the reverse 
