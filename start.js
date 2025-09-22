@@ -83,3 +83,14 @@ while(num>0){
 }
 console.log("the number is:", num);// print the number
 console.log("the reverse number is:", reverse);// print the reverse 
+
+//print the factorial number using while loop
+let num1 = prompt("enter the number you guest:");
+let num5 = parseInt(num1);
+let fact = 1;
+ while(num5>0){
+   fact*=num5;
+   num5--;
+
+ }
+  console.log(`the factorial number of ${num1}:`, fact);
