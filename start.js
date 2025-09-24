@@ -94,3 +94,22 @@ let fact = 1;
 
  }
   console.log(`the factorial number of ${num1}:`, fact);
+//do while loop start.
+let s = 1;
+do{
+  console.log(s);    // print 1 to 10 output
+  s++;
+}
+while(s<=10);
+console.log("this is _____")
+
+//Take a number and keep dividing it by 2 until it becomes less than 1.
+
+let u_number = prompt("to enter the number");
+
+let v_number = parseInt(u_number);
+do{
+    v_number=v_number/2;
+    console.log(v_number);
+
+}while(v_number>1);
