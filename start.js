@@ -113,3 +113,20 @@ do{
     console.log(v_number);
 
 }while(v_number>1);
+
+// Keep asking user input until they type “exit"
+
+let user ;
+do{
+  user = prompt("enter the user guest they want");  //they print user input untill they exit.
+  console.log(user);
+}while(user!=="exit");
+
+//Print the squares of numbers from 1 to 15.
+
+let number_op = 1;
+do{
+  console.log(number_op*number_op);
+  number_op++;
+}while(number_op<=15);
+
