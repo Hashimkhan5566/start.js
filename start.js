@@ -130,3 +130,118 @@ do{
   number_op++;
 }while(number_op<=15);
 
+//Find the sum of first 10 even numbers
+let suma = 0;
+let a = 1;
+do{
+  if(a%2==0){
+     suma+=a;
+  }
+ 
+  a++;
+}while(a<=10);
+console.log(suma);
+//start for in loop
+// Create an object of a student with properties: name, age, city, marks. Print all keys.
+
+let object = {
+  name : "hashimkhan",
+  age : "22",
+  city: "peshawar",
+  marks: "95%"
+
+}
+for(key in object){
+  console.log(key);
+}
+console.log(object);
+
+// Create an object of a student with properties: name, age, city, marks. Print all keys.
+let object_2 = {
+  name : "hashim",
+  age : "21",
+  city: "shawar",
+  marks: "85%"
+
+}
+for(items in object_2){
+  console.log(object_2[items]);
+} 
+console.log(object_2);
+
+// Count how many properties are in an object.
+let count = 0;
+let user_object = {
+  sarra: "the output",
+  arras : "routine",
+  dasra: "ineuotr",
+  asrad: "cver"
+}
+for(items in user_object){
+  console.log(count +":", items + "=",user_object[items] );
+  count++;
+ 
+}
+console.log(count);
+
+// Check if a property exists in an object (example: "age" in object).
+
+
+let property = {
+  name1: "ahad",
+  name2: "daha",
+  age1: 23,
+  age2: 12,
+  // name3 : "rtry",
+  // age3: 234  
+}
+for(key in property){
+  if("age1" in property){
+    console.log("<<<<the age 1 is present>>>>");
+
+  }
+  else{
+    console.log("the age1 is not present");
+  }
+ 
+}
+console.log(property);
+// Loop through an object of products (name, price) and print them.
+let product = {
+  name :"rice",
+  price: 23,
+  name2: "fruit",
+  price2: 44
+
+};
+for(prd in product){
+  console.log(prd + ":",product[prd]);
+
+}
+console.log(product);
+//for of loop
+//Print each character of the string "JavaScript".
+let a23 = "javascript";
+for(let str of a23){
+  console.log(str);
+
+}
+console.log(a23);
+// Print all elements of an array [2, 4, 6, 8, 10].
+let array = [2, 4, 6, 8, 10];
+
+for(arr of array){
+  console.log(arr);
+
+
+}
+console.log(array);
+//  Find the sum of array elements [5, 10, 15, 20, 25].
+let array6 = [5,10,15,20,25];
+let total = 0;
+
+for(let num of array6){
+  total+=num;
+  console.log("runing sum" + ":",total);
+}
+console.log("final sum" + ":",total);
