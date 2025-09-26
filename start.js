@@ -245,3 +245,62 @@ for(let num of array6){
   console.log("runing sum" + ":",total);
 }
 console.log("final sum" + ":",total);
+
+//Count how many vowels are in "Programming is fun".
+
+let b_string = "programming is fun";
+let counts = 0;
+
+for(let str of b_string){
+  if("aeiou".includes(str.toLowerCase())){
+    console.log("this is vowels", str);
+  }
+  else{
+      console.log("this is not vowels" ,str);
+
+    }
+    counts++;
+
+}
+console.log("the total string", count);
+console.log(b_string.length);
+//Print only unique elements from an array [1,2,2,3,4,4,5].
+
+// let unique_array = [1,2,2,3,4,4,5];
+
+// for(unique of unique_array){
+//   let unique11 = unique_array.filter((unique) => unique_array.indexof(unique)=== unique_array.lastindexof(unique));
+//   }
+// console.log(unique11);
+
+//Print numbers from 1 to 100 but:
+
+// If divisible by 3 print "Fizz"
+
+// If divisible by 5 print "Buzz"
+
+// If divisible by both print "FizzBuzz"
+
+let number = 0;
+for(number= 1; number<=100; number++){
+  if(number%3){
+    console.log("fizz");
+  }
+  else if(number%5){
+    console.log("buzz");
+  }
+  else{
+    console.log("fizzbuzz");
+  }
+}
+console.log(number);
+
+// Find the largest number in an array.
+
+let largest_array = [22,33,44,1,23,3,4,5,100];
+for(num of largest_array){
+  let largest = largest_array.filter((num) =>{
+    console.log(num);
+  }) 
+}
+console.log(num);
