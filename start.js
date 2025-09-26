@@ -298,9 +298,11 @@ console.log(number);
 // Find the largest number in an array.
 
 let largest_array = [22,33,44,1,23,3,4,5,100];
+let largests  = largest_array[0];
 for(num of largest_array){
-  let largest = largest_array.filter((num) =>{
-    console.log(num);
-  }) 
+  if(num>largests){
+    largests = num;
+
+  } 
 }
-console.log(num);
+console.log(largests);
