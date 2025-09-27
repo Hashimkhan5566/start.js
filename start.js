@@ -264,13 +264,13 @@ for(let str of b_string){
 }
 console.log("the total string", count);
 console.log(b_string.length);
-//Print only unique elements from an array [1,2,2,3,4,4,5].
+// //Print only unique elements from an array [1,2,2,3,4,4,5].
 
-// let unique_array = [1,2,2,3,4,4,5];
+//  let unique_array = [1,2,2,3,4,4,5];
 
 // for(unique of unique_array){
-//   let unique11 = unique_array.filter((unique) => unique_array.indexof(unique)=== unique_array.lastindexof(unique));
-//   }
+// let unique11 = unique_array.filter((unique) => unique_array.indexof(unique)=== unique_array.lastindexof(unique));
+// }
 // console.log(unique11);
 
 //Print numbers from 1 to 100 but:
@@ -306,3 +306,15 @@ for(num of largest_array){
   } 
 }
 console.log(largests);
+// Count how many numbers in an array are greater than 50.
+
+let no_array = [222,3,11,33,55,343,22,24,33,11,44,3,7,6,58];
+let count6= 0;
+for(let nom of no_array){
+  if(nom> 50 ){
+   console.log(nom);
+    count6++;
+  }
+} 
+console.log(count6);
+console.log(no_array.length);
