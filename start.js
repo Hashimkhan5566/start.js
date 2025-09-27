@@ -318,3 +318,17 @@ for(let nom of no_array){
 } 
 console.log(count6);
 console.log(no_array.length);
+
+// Print all prime numbers between 1 and 50.
+
+let prime_number = [1,3,2,4,5,6,7,8,9,10,11,21,32,134,45,334,423,3243,];
+let prime  =0;
+for(prime of prime_number){
+  if(prime%1 && prime%2===0){
+    console.log("prime number");
+  }
+  else{
+    console.log("not prime number");
+  }
+}
+console.log(prime, prime_number);
