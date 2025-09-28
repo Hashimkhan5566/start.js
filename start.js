@@ -321,14 +321,37 @@ console.log(no_array.length);
 
 // Print all prime numbers between 1 and 50.
 
-let prime_number = [1,3,2,4,5,6,7,8,9,10,11,21,32,134,45,334,423,3243,];
-let prime  =0;
-for(prime of prime_number){
-  if(prime%1 && prime%2===0){
-    console.log("prime number");
+// let prime_number = [1,3,2,4,5,6,7,8,9,10,11,21,32,134,45,334,423,3243,];
+
+// for(num4 of prime_number){
+//   let prime  = true;
+//   if(num4<1){
+//     console.log("not prime number");
+//   }
+//   else{
+//     console.log("not prime number");
+//   }
+//   break;
+//   for(let i=2; i<=num; i++){
+//     console.log("this is prime");
+//   }
+// }
+// console.log(prime, prime_number);
+
+//print Take a string and count how many times each character appears.
+let string_in = prompt("enter a string your own choice");
+let count1p = {};
+
+for(let str of string_in){
+
+  if(count1p[str]){
+    count1p[str]++;
   }
   else{
-    console.log("not prime number");
+    count1p[str]= 1;
   }
+
 }
-console.log(prime, prime_number);
+for(str in count1p){
+console.log(str ,"appear",count1p[str] , "times");
+}
