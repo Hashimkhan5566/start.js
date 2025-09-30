@@ -355,3 +355,11 @@ for(let str of string_in){
 for(str in count1p){
 console.log(str ,"appear",count1p[str] , "times");
 }
+// Reverse a string without using built-in functions.
+let string_reverse = prompt("enter your choice string");
+let reverse12 = "";
+
+for(let i= string_reverse.length-1; i>=0; i--){
+  reverse12 +=string_reverse[i];
+}
+console.log("the reverse is ", reverse12);
